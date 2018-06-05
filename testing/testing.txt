@@ -1,0 +1,18 @@
+
+This programme was not tested in its early stages on the assumption that it could be returned to at a later point. Unfortunately, this resulted in a series of bugs. These bugs could not be solved and thus the majority of the code had to be scrapped and required rewriting. There was an attempt to soldier on through these bugs but the code quickly became untenable. This wasted a considerable amount of time and with the power of retrospect, it is now clear why the importance of testing before graphics was emphasised. 
+
+From reading online I realised that C doe not provide direct support for error handling. I thus decided to employ 3 major testing strategies. Each had it own benefits and failings.
+
+1. Built my own test.m7 file.
+2. Test the values of both functions and assignments after every line.
+3. Use of ON_ERROR.
+
+The second attempt at writing this programme used my own test.m7 file which can be found in this file and ran with 'tester.m7'. This .c file rather laboriously tested each of my functions. I initilally proved that they could work with this simplified .m7 file and then used my functions in the test.m7 file. This approach although it illustrated to me that my functions did work was time consuming. I tried to automate this to some degree with the held graphics unit test but came to the conclusion that the assert approach was a far more appropriate means of testing the code at hand.     
+
+Whilst building the test.m7 file I began using asserts. Through this, it was possible to correct problems that had previously plagued the code. An example of this is that I had actually used a % rather than a minus in my switch statement. This generated the wrong answer and left me with a number of rogue pixels. These rogue pixels were then localised through the use of assert's. So by correctly  using asserts, the error was detected and corrected appropriately.
+
+ON_ERROR was used to help illustrate the the code was being tested at key intervals. It was used when I initially uploaded the files, that the correct values were being supplied to the switch statements 
+
+Testing is a process that I had ignored in the majority of my previous work. I had always prioritised the writing the code rather than the testing. This time I did test, I found that this approach considerably minimised the time spent on debugging and actually freed time and helped reduce the stress that comes with debugging. 
+
+I am pleased with this submission and hope you find it to a high standard. 

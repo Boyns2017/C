@@ -1,0 +1,14 @@
+This extension aimed to create a replica of the gifs provided on an HTML webpage. This task was achieved. However, certain display aspects of the gif were missed. It proved difficult to accurately render the pixels. Further to this, there was difficulty rendering the double height over the two rows as done so in the .c files. Despite this the task was successful. The HTML test page bears a strong resemblance to the test gif. The panda and lfc HTML replicas bear a good resemblance to their respective gifs, although it is clear that the pixel display is a little abstract.
+
+The project required knowledge of HTML, a language not previously taught on the course. To do this W3 resources were utilised. The project was surprisingly detailed. Although a simple language, HTML was at times difficult to incorporate into the C code. This was evidenced by the magic numbers found with the fprintf function. As a C programmer, it would have seemed to be more logical to have replaced these with the appropriate constant tags. However, when translated these constants are useless. This mistake was not detected until deep into the extension and so a rather long amount of time was spent trying to understand why the screen would not render. The mistake was eventually spotted and corrected appropriately
+
+To create the HTML page the following logic was followed: 
+
+1. Utilise the markers created in the initial 50% coursework.
+2. Create a 2D html table.
+3. Fill this table piecemeal with the appropriate tags. 
+4. Use asserts to keep track of testing. 
+
+Learning from previous endeavors, it seemed wise to test this programme from the beginning. This meant the code was created without nearly as many difficulties as in previous projects.
+
+In retrospect the code is convoluted. A 2d array of the appropriate tags should have been created and then frpinted to the file in one. This approach would have minimized the access of the HTML file by the .c file potentially reducing energy consumption. However, the task was completed and the testing lessons learnt from the previous assignments were used to complete it. 
